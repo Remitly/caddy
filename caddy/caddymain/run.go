@@ -21,6 +21,15 @@ import (
 
 	"github.com/mholt/caddy/caddytls"
 	// This is where other plugins get plugged in (imported)
+
+	_ "github.com/BTBurke/caddy-jwt"
+	_ "github.com/captncraig/cors"
+	_ "github.com/echocat/caddy-filter"
+	_ "github.com/epicagency/caddy-expires"
+	_ "github.com/miekg/caddy-prometheus"
+	_ "github.com/pyed/ipfilter"
+	_ "github.com/sporkmonger/caddy-realip"
+	_ "github.com/xuqingfeng/caddy-rate-limit"
 )
 
 func init() {
